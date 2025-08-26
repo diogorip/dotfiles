@@ -35,7 +35,7 @@
     {
       "type": "packages",
       "key": "{#90}│ {#93}Packages    {#90}│",
-      "format": "{$1}{brew} {#2}[brew]"
+      "format": "{$1}{all} {#2}[all]"
     },
     {
       "type": "uptime",
