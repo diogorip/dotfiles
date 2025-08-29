@@ -2,10 +2,14 @@
 {
   programs.ssh = {
     enable = true;
-    hashKnownHosts = true;
-    compression = true;
+    enableDefaultConfig = false;
 
     matchBlocks = {
+      "*" = {
+        hashKnownHosts = true;
+        compression = true;
+      };
+
       "github.com" = {
         user = "git";
         hostname = "github.com";

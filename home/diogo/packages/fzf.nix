@@ -3,6 +3,7 @@
     enable = true;
 
     enableZshIntegration = true;
+    tmux.enableShellIntegration = true;
 
     defaultOptions = [
       "--height=40%"

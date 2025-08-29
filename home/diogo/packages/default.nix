@@ -7,12 +7,13 @@
     ./ohmyposh
     ./btop.nix
     ./ssh.nix
-    ./fzf.nix
     ./gpg.nix
     ./neovim
     ./tmux.nix
     ./kitty
     ./firefox.nix
+    ./fzf.nix
+    ./ripgrep.nix
   ];
 
   sys.packages = {
