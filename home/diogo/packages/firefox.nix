@@ -89,6 +89,20 @@ let
             Alias = "kagi";
             SuggestURLTemplate = "https://kagi.com/api/autosuggest?q={searchTerms}";
           }
+          {
+            Name = "Startpage";
+            IconURL = "https://www.startpage.com/sp/cdn/favicons/favicon--light.ico";
+            URLTemplate = "https://www.startpage.com/sp/search?query={searchTerms}";
+            Alias = "startpage";
+            SuggestURLTemplate = "https://www.startpage.com/osuggestions?q={searchTerms}";
+          }
+          {
+            Name = "Qwant";
+            IconURL = "https://www.qwant.com/favicon.ico";
+            URLTemplate = "https://www.qwant.com/?q={searchTerms}";
+            Alias = "qwant";
+            SuggestURLTemplate = "https://api.qwant.com/api/suggest/?q={searchTerms}";
+          }
         ];
         Default = "Kagi";
       };
