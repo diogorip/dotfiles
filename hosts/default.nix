@@ -12,6 +12,8 @@
         arch = "aarch64";
         class = "darwin";
       };
+
+      lumi = { };
     };
   };
 }
