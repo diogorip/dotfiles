@@ -7,9 +7,13 @@
 let
   inherit (lib) mkIf;
   inherit (self.lib) mkServiceOption;
+
+  cfg = config.sys.services.asf;
 in
 {
-  options.sys.services.asf = mkServiceOption "asf" { };
+  options.sys.services.asf = mkServiceOption "asf" {
+    port = 1242;
+  };
 
   config = mkIf config.sys.services.asf.enable {
     sops.secrets.asf = {
@@ -29,7 +33,7 @@ in
         Kestrel = {
           Endpoints = {
             HTTP = {
-              Url = "http://*:1242";
+              Url = "http://*:${toString cfg.port}";
             };
           };
         };
