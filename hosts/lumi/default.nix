@@ -5,8 +5,8 @@
     services = {
       caddy.enable = true;
       docker.enable = true;
-      uptime-kuma.enable = true;
       asf.enable = true;
+      gatus.enable = true;
     };
   };
 
