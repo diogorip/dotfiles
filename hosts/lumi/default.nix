@@ -1,3 +1,4 @@
+{ config, ... }:
 {
   sys = {
     profiles.headless.enable = true;
@@ -36,6 +37,12 @@
   };
 
   zramSwap.enable = true;
+
+  services.caddy.virtualHosts.${config.sys.services.caddy.domain} = {
+    extraConfig = ''
+      reverse_proxy localhost:5757
+    '';
+  };
 
   system.stateVersion = "25.05";
 }

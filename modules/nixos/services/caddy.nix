@@ -18,8 +18,9 @@ in
   };
 
   config = mkIf cfg.enable {
-    sops.secrets.bunny = {
-      sopsFile = "${self}/secrets/services/bunny.yaml";
+    sops.secrets.cloudflare-cert = {
+      sopsFile = "${self}/secrets/services/cloudflare.yaml";
+      key = "cert";
       owner = "caddy";
       group = "caddy";
     };
@@ -28,11 +29,11 @@ in
 
     security.acme = {
       acceptTerms = true;
-      defaults.email = "contact@luvsick.gg";
+      defaults.email = "hi@luvsick.gg";
       certs.${cfg.domain} = {
         extraDomainNames = [ "*.${cfg.domain}" ];
-        dnsProvider = "bunny";
-        credentialsFile = config.sops.secrets.bunny.path;
+        dnsProvider = "cloudflare";
+        credentialsFile = config.sops.secrets.cloudflare-cert.path;
       };
     };
 
