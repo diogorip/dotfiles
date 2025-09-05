@@ -77,6 +77,7 @@
         "raycast"
         "zen@twilight"
         "mullvad-vpn"
+        "zed"
       ];
     };
   };

@@ -28,6 +28,7 @@
       nvim-treesitter.withAllGrammars
     ];
     extraPackages = with pkgs; [
+      nixd
       nil
       vtsls
       vue-language-server

@@ -53,7 +53,7 @@ let
       DisableFirefoxAccounts = true;
       DNSOverHTTPS = {
         Enabled = true;
-        ProviderURL = "https://base.dns.mullvad.net/dns-query";
+        ProviderURL = "https://security.cloudflare-dns.com/dns-query";
         Fallback = true;
         Locked = true;
       };
