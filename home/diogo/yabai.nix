@@ -26,6 +26,7 @@
       yabai -m space 2 --label dev
       yabai -m rule --add app="kitty" space=dev
       yabai -m rule --add app="Xcode" space=dev
+      yabai -m rule --add app="Zed" space=dev
 
       # space 3: misc
       yabai -m space 3 --label misc --layout stack
@@ -43,7 +44,7 @@
       yabai -m rule --add app="WhatsApp" space=stack
       yabai -m rule --add app="Podcasts" space=stack
       yabai -m rule --add app="Music" space=stack
-      yabai -m rule --add app="Thunderbird" space=stack
+      yabai -m rule --add app="Proton Mail" space=stack
 
       # don't manage
       yabai -m rule --add label="System Settings" app="^System Settings$" manage=off

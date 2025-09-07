@@ -78,6 +78,8 @@
         "zen@twilight"
         "mullvad-vpn"
         "zed"
+        "proton-mail"
+        "proton-drive"
       ];
     };
   };
