@@ -28,6 +28,7 @@
       go
       rustc
       cargo
+      codeberg-cli
       ;
   };
 }

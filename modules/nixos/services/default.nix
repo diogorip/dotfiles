@@ -4,5 +4,6 @@
     ./caddy.nix
     ./asf.nix
     ./gatus.nix
+    ./woodpecker.nix
   ];
 }

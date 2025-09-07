@@ -28,15 +28,17 @@ in
             header = "luvsick.gg Status";
             logo = "https://cdn.luvsick.gg/notobunny.png";
           };
-          endpoints = [{
-            name = "website";
-            url = "https://luvsick.gg";
-            interval = "5m";
-            conditions = [
-              "[STATUS] == 200"
-              "[RESPONSE_TIME] < 300"
-            ];
-          }];
+          endpoints = [
+            {
+              name = "website";
+              url = "https://luvsick.gg";
+              interval = "5m";
+              conditions = [
+                "[STATUS] == 200"
+                "[RESPONSE_TIME] < 300"
+              ];
+            }
+          ];
         };
       };
 

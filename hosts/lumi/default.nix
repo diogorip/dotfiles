@@ -7,6 +7,8 @@
       docker.enable = true;
       asf.enable = true;
       gatus.enable = true;
+      woodpecker-server.enable = true;
+      woodpecker-agent.enable = true;
     };
   };
 
