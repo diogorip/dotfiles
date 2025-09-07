@@ -51,7 +51,6 @@ in
           pkgs.coreutils
           pkgs.nix
         ];
-        extraGroups = [ "wheel" ];
       };
 
       caddy.virtualHosts = mkIf scfg.enable {
