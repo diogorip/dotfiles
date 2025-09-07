@@ -29,7 +29,7 @@ in
         enable = scfg.enable;
         environment = {
           WOODPECKER_HOST = "https://${scfg.domain}";
-          WOODPECKER_SERVER_ADDR = ":${scfg.port}";
+          WOODPECKER_SERVER_ADDR = ":${toString scfg.port}";
           WOODPECKER_GRPC_ADDR = ":9000";
           WOODPECKER_OPEN = "false";
           WOODPECKER_ADMIN = "luvsick";
