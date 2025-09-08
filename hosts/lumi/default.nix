@@ -1,4 +1,3 @@
-{ config, ... }:
 {
   sys = {
     profiles.headless.enable = true;
@@ -11,6 +10,7 @@
       woodpecker-agent.enable = true;
       forgejo.enable = true;
       website.enable = true;
+      cloudflared.enable = true;
     };
   };
 

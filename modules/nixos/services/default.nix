@@ -7,5 +7,6 @@
     ./postgresql.nix
     ./forgejo.nix
     ./website.nix
+    ./cloudflared.nix
   ];
 }
