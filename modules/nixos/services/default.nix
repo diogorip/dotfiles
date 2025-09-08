@@ -5,5 +5,6 @@
     ./asf.nix
     ./woodpecker.nix
     ./postgresql.nix
+    ./website.nix
   ];
 }
