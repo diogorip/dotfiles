@@ -6,7 +6,7 @@
       caddy.enable = true;
       docker.enable = true;
       asf.enable = true;
-      gatus.enable = true;
+      postgresql.enable = true;
       woodpecker-server.enable = true;
       woodpecker-agent.enable = true;
     };
