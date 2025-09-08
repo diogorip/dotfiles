@@ -9,6 +9,7 @@
       postgresql.enable = true;
       woodpecker-server.enable = true;
       woodpecker-agent.enable = true;
+      forgejo.enable = true;
       website.enable = true;
     };
   };
