@@ -40,9 +40,8 @@ let
           "https://mistral.ai"
           "https://codeberg.org"
           "https://revolut.com"
-          "https://bunny.net"
-          "https://tangled.sh"
           "https://kagi.com"
+          "https://luvsick.gg"
         ];
       };
       SanitizeOnShutdown = {
