@@ -80,6 +80,7 @@
         "zed"
         "proton-mail"
         "proton-drive"
+        "sketch@beta"
       ];
     };
   };
