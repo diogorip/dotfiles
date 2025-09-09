@@ -44,6 +44,7 @@ in
             SSH_PORT = 2222;
             SSH_LISTEN_PORT = 2222;
             SSH_CREATE_AUTHORIZED_KEYS_FILE = true;
+            SSH_DOMAIN = "ssh.${config.sys.services.caddy.domain}";
             PROTOCOL = "http+unix";
             ROOT_URL = "https://${cfg.domain}";
             DOMAIN = cfg.domain;
