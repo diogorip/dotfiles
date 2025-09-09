@@ -1,4 +1,9 @@
-{ lib, config, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 {
   programs.ssh = {
     enable = true;
@@ -8,17 +13,14 @@
       "*" = {
         hashKnownHosts = true;
         compression = true;
+        identityAgent = lib.mkIf config.sys.profiles.graphical.enable ''"~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"'';
       };
 
-      "github.com" = {
+      "git.luvsick.gg" = {
         user = "git";
-        hostname = "github.com";
+        hostname = "ssh.luvsick.gg";
+        proxyCommand = "${pkgs.cloudflared}/bin/cloudflared access ssh --hostname %h";
       };
     };
-
-    extraConfig = lib.mkIf config.sys.profiles.graphical.enable ''
-      Host *
-        IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-    '';
   };
 }
