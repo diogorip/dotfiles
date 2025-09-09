@@ -18,6 +18,13 @@ in
   };
 
   config = mkIf cfg.enable {
+    sops.secrets.anubis-forgejo = {
+      sopsFile = "${self}/secrets/services/anubis.yaml";
+      key = "forgejo";
+      owner = "anubis";
+      group = "anubis";
+    };
+
     networking.firewall.allowedTCPPorts = [
       config.services.forgejo.settings.server.HTTP_PORT
       config.services.forgejo.settings.server.SSH_PORT
@@ -83,9 +90,21 @@ in
         };
       };
 
-      caddy.virtualHosts.${cfg.domain}.extraConfig = ''
-        reverse_proxy unix/${config.services.forgejo.settings.server.HTTP_ADDR}
-      '';
+      anubis = mkIf config.sys.services.anubis.enable {
+        instances.forgejo.settings = {
+          TARGET = "unix://${config.services.forgejo.settings.server.HTTP_ADDR}";
+          ED25519_PRIVATE_KEY_HEX_FILE = config.sops.secrets.anubis-forgejo.path;
+        };
+      };
+
+      caddy.virtualHosts.${cfg.domain}.extraConfig =
+        ''reverse_proxy unix/''
+        + (
+          if config.sys.services.anubis.enable then
+            config.services.anubis.instances.forgejo.settings.BIND
+          else
+            config.services.forgejo.settings.server.HTTP_ADDR
+        );
     };
   };
 }
