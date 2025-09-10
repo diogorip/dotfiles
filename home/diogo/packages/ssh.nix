@@ -16,6 +16,8 @@
         identityAgent = lib.mkIf config.sys.profiles.graphical.enable ''"~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"'';
       };
 
+      "lumi".hostname = "2001:41d0:305:2100::7785";
+
       "git.luvsick.gg" = {
         user = "git";
         hostname = "ssh.luvsick.gg";
