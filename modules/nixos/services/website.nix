@@ -17,10 +17,8 @@ in
   };
 
   config = mkIf cfg.enable {
-    services.caddy.virtualHosts.${cfg.domain} = {
-      extraConfig = ''
-        reverse_proxy localhost:${toString cfg.port}
-      '';
-    };
+    services.caddy.virtualHosts.${cfg.domain}.extraConfig = ''
+      reverse_proxy localhost:${toString cfg.port}
+    '';
   };
 }
