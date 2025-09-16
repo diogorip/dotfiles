@@ -40,6 +40,7 @@ let
           "https://codeberg.org"
           "https://revolut.com"
           "https://luvsick.gg"
+          "http://10.100.0.1"
         ];
       };
       SanitizeOnShutdown = {
