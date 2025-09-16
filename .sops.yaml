@@ -1,7 +1,7 @@
 keys:
   - &diogo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE4wh28BWFp9Jql1BEzEO5RjtlmzBqRSXjGo03a8qXdd
 
-  - &lumi age1wkmkx4ru8lcgzrkjxyc7u77s9vdrneengltz6wjsy600lh2n8smqut342x
+  - &lumi age1lkqmcwryw452unkesq2mwlyn52p9hkzu03sj24f33w9eg8d3ra3qxa443l
 
 creation_rules:
   - path_regex: ^secrets/diogo\.yaml$
