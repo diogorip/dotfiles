@@ -77,22 +77,6 @@ vim.keymap.set({ "n", "v" }, "<leader>f", function()
   require("conform").format({ timeout_ms = 500, lsp_format = "fallback" })
 end, { desc = "Format buffer or selection" })
 
-require("cord").setup({
-  editor = {
-    tooltip = "Neovim",
-    icon = "https://raw.githubusercontent.com/IogaMaster/neovim/main/.github/assets/nixvim-dark.webp",
-  },
-  display = {
-    theme = "catppuccin",
-    flavor = "accent",
-  },
-  text = {
-    file_browser = true,
-    workspace = "Working on ${workspace}",
-  },
-  variables = true,
-})
-
 require("gitsigns").setup({
   current_line_blame = true,
   current_line_blame_opts = {

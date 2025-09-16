@@ -13,7 +13,6 @@
       cmp-nvim-lsp
       cmp-path
       conform-nvim
-      cord-nvim
       gitsigns-nvim
       lualine-nvim
       mini-nvim

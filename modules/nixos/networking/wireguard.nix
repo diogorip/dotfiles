@@ -1,0 +1,46 @@
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
+let
+  inherit (lib) mkIf mkEnableOption;
+
+  cfg = config.sys.networking.wireguard;
+in
+{
+  options.sys.networking.wireguard = {
+    enable = mkEnableOption "WireGuard";
+  };
+
+  config = mkIf cfg.enable {
+    sys.packages = { inherit (pkgs) wireguard-tools; };
+
+    networking = {
+      firewall.allowedUDPPorts = [ 51820 ];
+
+      wireguard.interfaces.wg0 = {
+        ips = [ "10.100.0.1/24" ];
+        listenPort = 51820;
+
+        postSetup = ''
+          ${pkgs.iptables}/bin/iptables -t nat -A POSTROUTING -s 10.100.0.0/24 -o eth0 -j MASQUERADE
+        '';
+
+        postShutdown = ''
+          ${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.0.0/24 -o eth0 -j MASQUERADE
+        '';
+
+        privateKeyFile = "/root/wg-private";
+
+        peers = [
+          {
+            publicKey = "NfL3vksTUk04gwJA8DE+qy/Qi74rK5+1oE5nScycd2k=";
+            allowedIPs = [ "10.100.0.2/32" ];
+          }
+        ];
+      };
+    };
+  };
+}

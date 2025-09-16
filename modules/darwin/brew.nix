@@ -55,6 +55,7 @@
         "Pages" = 409201541;
         "TestFlight" = 899247664;
         "WhatsApp" = 310633997;
+        "WireGuard" = 1451685025;
       };
 
       brews = [
