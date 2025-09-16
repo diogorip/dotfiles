@@ -1,7 +1,6 @@
 {
   imports = [
     ./hardware.nix
-    ./networking.nix
   ];
 
   sys = {
@@ -14,6 +13,7 @@
       website.enable = true;
       cloudflared.enable = true;
     };
+    networking.wireguard.enable = true;
   };
 
   system.stateVersion = "25.05";

@@ -10,9 +10,7 @@ let
   cfg = config.sys.networking.wireguard;
 in
 {
-  options.sys.networking.wireguard = {
-    enable = mkEnableOption "WireGuard";
-  };
+  options.sys.networking.wireguard.enable = mkEnableOption "WireGuard";
 
   config = mkIf cfg.enable {
     sys.packages = { inherit (pkgs) wireguard-tools; };
