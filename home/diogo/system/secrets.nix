@@ -1,5 +1,3 @@
 {
-  sops.secrets = {
-    gpg = { };
-  };
+  sops.secrets = { };
 }
