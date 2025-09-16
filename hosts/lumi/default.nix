@@ -11,10 +11,8 @@
       docker.enable = true;
       asf.enable = true;
       postgresql.enable = true;
-      forgejo.enable = true;
       website.enable = true;
       cloudflared.enable = true;
-      anubis.enable = true;
     };
   };
 
