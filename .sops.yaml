@@ -1,5 +1,5 @@
 keys:
-  - &diogo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGIyMCwBcRVn8QdhGrI/2PWY6g9cIFEGphXBG2T3FHg5
+  - &diogo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE4wh28BWFp9Jql1BEzEO5RjtlmzBqRSXjGo03a8qXdd
 
   - &lumi age1wkmkx4ru8lcgzrkjxyc7u77s9vdrneengltz6wjsy600lh2n8smqut342x
 
