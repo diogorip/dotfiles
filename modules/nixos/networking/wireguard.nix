@@ -29,7 +29,10 @@ in
       };
 
       wireguard.interfaces.wg0 = {
-        ips = [ "10.100.0.1/24" ];
+        ips = [
+          "10.100.0.1/24"
+          "fd00:1:1:1::1/64"
+        ];
         listenPort = 51820;
 
         postSetup = ''
@@ -45,7 +48,10 @@ in
         peers = [
           {
             publicKey = "I3IrbxHSdjIFWBZXvvDw2+5yvIBgfQyKJrGOhunVOSM=";
-            allowedIPs = [ "10.100.0.2/32" ];
+            allowedIPs = [
+              "10.100.0.2/32"
+              "fd00:1:1:1::2/128"
+            ];
           }
         ];
       };
