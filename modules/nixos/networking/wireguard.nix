@@ -16,7 +16,10 @@ in
     sys.packages = { inherit (pkgs) wireguard-tools; };
 
     networking = {
-      firewall.allowedUDPPorts = [ 51820 ];
+      firewall = {
+        allowedUDPPorts = [ 51820 ];
+        trustedInterfaces = [ "wg0" ];
+      };
 
       nat = {
         enable = true;
@@ -30,11 +33,11 @@ in
         listenPort = 51820;
 
         postSetup = ''
-          ${pkgs.iptables}/bin/iptables -t nat -A POSTROUTING -s 10.100.0.0/24 -o eth0 -j MASQUERADE
+          ${pkgs.iptables}/bin/iptables -t nat -A POSTROUTING -s 10.100.0.0/24 -o ens3 -j MASQUERADE
         '';
 
         postShutdown = ''
-          ${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.0.0/24 -o eth0 -j MASQUERADE
+          ${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.0.0/24 -o ens3 -j MASQUERADE
         '';
 
         privateKeyFile = "/root/wg-private";
