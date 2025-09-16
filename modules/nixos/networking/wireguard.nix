@@ -20,6 +20,13 @@ in
     networking = {
       firewall.allowedUDPPorts = [ 51820 ];
 
+      nat = {
+        enable = true;
+        enableIPv6 = true;
+        externalInterface = "ens3";
+        internalInterfaces = [ "wg0" ];
+      };
+
       wireguard.interfaces.wg0 = {
         ips = [ "10.100.0.1/24" ];
         listenPort = 51820;
