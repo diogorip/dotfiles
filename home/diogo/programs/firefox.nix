@@ -97,8 +97,8 @@ in
 {
   home.activation.installFirefoxPolicies = lib.mkIf (pkgs.stdenv.hostPlatform.isDarwin) (
     lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-      mkdir -p "/Applications/Twilight.app/Contents/Resources/distribution"
-      echo '${builtins.toJSON policies}' > "/Applications/Twilight.app/Contents/Resources/distribution/policies.json"
+      mkdir -p "/Applications/Zen.app/Contents/Resources/distribution"
+      echo '${builtins.toJSON policies}' > "/Applications/Zen.app/Contents/Resources/distribution/policies.json"
     ''
   );
 }

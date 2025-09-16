@@ -75,7 +75,7 @@
         "signal"
         "vesktop"
         "raycast"
-        "zen@twilight"
+        "zen"
         "zed"
         "sketch@beta"
       ]
