@@ -6,8 +6,6 @@
     ./zsh.nix
     ./ohmyposh
     ./btop.nix
-    ./ssh.nix
-    ./gpg.nix
     ./neovim
     ./tmux.nix
     ./kitty
@@ -28,7 +26,6 @@
       go
       rustc
       cargo
-      codeberg-cli
       ;
   };
 }

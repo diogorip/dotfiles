@@ -2,7 +2,7 @@
   home.file.".hushlogin".text = "";
 
   imports = [
-    ./packages
+    ./programs
     ./catppuccin.nix
     ./yabai.nix
     ./system

@@ -4,11 +4,11 @@
     package = pkgs.gitMinimal;
     enable = true;
     userName = "Diogo";
-    userEmail = "hi@luvsick.gg";
+    userEmail = "hi" + "@" + "luvsick" + "." + "gg";
 
     signing = {
-      key = "25E38D1809236776";
-      format = "openpgp";
+      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE4wh28BWFp9Jql1BEzEO5RjtlmzBqRSXjGo03a8qXdd";
+      format = "ssh";
       signByDefault = true;
     };
 
@@ -64,11 +64,28 @@
         line-numbers = true;
         hyperlinks = true;
         side-by-side = true;
+        navigate = true;
       };
     };
 
     extraConfig = {
       init.defaultBranch = "main";
+
+      commit.verbose = true;
+
+      push.autoSetupRemote = true;
+
+      merge = {
+        stat = "true";
+        conflictstyle = "zdiff3";
+        tool = "meld";
+      };
+
+      rebase = {
+        updateRefs = true;
+        autoSquash = true;
+        autoStash = true;
+      };
     };
   };
 

@@ -1,7 +1,6 @@
 {
   lib,
   config,
-  pkgs,
   ...
 }:
 {
@@ -18,10 +17,14 @@
 
       "lumi".hostname = "2001:41d0:305:2100::7785";
 
-      "git.luvsick.gg" = {
+      "codeberg.org" = {
         user = "git";
-        hostname = "ssh.luvsick.gg";
-        proxyCommand = "${pkgs.cloudflared}/bin/cloudflared access ssh --hostname %h";
+        hostname = "codeberg.org";
+      };
+
+      "github.com" = {
+        user = "git";
+        hostname = "github.com";
       };
     };
   };

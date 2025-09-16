@@ -2,6 +2,7 @@
   pkgs,
   inputs,
   config,
+  lib,
   ...
 }:
 {
@@ -17,14 +18,14 @@
         "homebrew/homebrew-core" = pkgs.fetchFromGitHub {
           owner = "homebrew";
           repo = "homebrew-core";
-          rev = "dff4fc652f2fbe435ebbad69d0b8fb4207212175";
-          hash = "sha256-drBTsJEEpclkPZ94iIpfMQwqmCVd5VCh7s7iI/qDkMY=";
+          rev = "10bd122b5d16ee57ad03fcbadeeca9d51d158788";
+          hash = "sha256-V4LCTzpHTY8dBUV/ww4dOtOhxoOb7VsbIFN+YMA+gO0=";
         };
         "homebrew/homebrew-cask" = pkgs.fetchFromGitHub {
           owner = "homebrew";
           repo = "homebrew-cask";
-          rev = "11c9f2b97fc160b0c717ff4acb5f7e4c8441c1b1";
-          hash = "sha256-8sV8MJ8n8ZJB+g6hn96dl+zmwZ0mgwrcVTxU4FGEFSY=";
+          rev = "0d81408724412838d4d3299396535cafb095ac9e";
+          hash = "sha256-auiDJuAW4QYhYrfKJvBBJaF8yBxkZIIRmvp6cgvFV/o=";
         };
         "koekeishiya/homebrew-formulae" = pkgs.fetchFromGitHub {
           owner = "koekeishiya";
@@ -57,7 +58,6 @@
       };
 
       brews = [
-        "colima"
         "docker"
         "docker-compose"
         "mas"
@@ -72,16 +72,13 @@
         "font-maple-mono"
         "kitty"
         "signal"
-        "steam"
         "vesktop"
         "raycast"
         "zen@twilight"
-        "mullvad-vpn"
         "zed"
-        "proton-mail"
-        "proton-drive"
         "sketch@beta"
-      ];
+      ]
+      ++ lib.optionals config.sys.profiles.gaming.enable [ "steam" ];
     };
   };
 }

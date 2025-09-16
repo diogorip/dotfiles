@@ -25,7 +25,6 @@ let
           "https://1password.eu"
           "https://google.com"
           "https://youtube.com"
-          "https://proton.me"
           "https://cloudflare.com"
           "https://twitch.tv"
           "https://apple.com"
@@ -40,7 +39,6 @@ let
           "https://mistral.ai"
           "https://codeberg.org"
           "https://revolut.com"
-          "https://kagi.com"
           "https://luvsick.gg"
         ];
       };

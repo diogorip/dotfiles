@@ -44,7 +44,6 @@
       yabai -m rule --add app="WhatsApp" space=stack
       yabai -m rule --add app="Podcasts" space=stack
       yabai -m rule --add app="Music" space=stack
-      yabai -m rule --add app="Proton Mail" space=stack
 
       # don't manage
       yabai -m rule --add label="System Settings" app="^System Settings$" manage=off

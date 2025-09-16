@@ -7,6 +7,7 @@ in
     inherit (cfg)
       graphical
       headless
+      gaming
       ;
   };
 }
