@@ -1,0 +1,25 @@
+{ config, ... }:
+{
+  programs.zed-editor = {
+    inherit (config.sys.profiles.graphical) enable;
+    extensions = [
+      "git-firefly"
+      "vue"
+      "dockerfile"
+      "docker-compose"
+      "nix"
+    ];
+    userSettings = {
+      telemetry = {
+        diagnostics = false;
+        metrics = false;
+      };
+
+      vim_mode = true;
+
+      ui_font_size = 16;
+      buffer_font_family = "Maple Mono";
+      buffer_font_size = 18;
+    };
+  };
+}

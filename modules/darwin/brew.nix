@@ -71,15 +71,15 @@
         "1password-cli"
         "aldente"
         "font-maple-mono"
-        "kitty"
         "signal"
-        "vesktop"
         "raycast"
         "zen"
-        "zed"
         "sketch@beta"
       ]
-      ++ lib.optionals config.sys.profiles.gaming.enable [ "steam" ];
+      ++ lib.optionals config.sys.profiles.gaming.enable [
+        "steam"
+        "prismlauncher"
+      ];
     };
   };
 }

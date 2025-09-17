@@ -17,7 +17,7 @@ let
       NoDefaultBookmarks = true;
       Cookies = {
         Allow = [
-          "https://bdiogo.app"
+          "https://bsky.app"
           "https://github.com"
           "https://steamcommunity.com"
           "https://steampowered.com"
@@ -70,7 +70,6 @@ let
           "https://addons.mozilla.org/firefox/downloads/latest/betterttv/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/catppuccin-web-file-icons/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/clearurls/latest.xpi"
-          "https://addons.mozilla.org/firefox/downloads/latest/refined-github-/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi"
