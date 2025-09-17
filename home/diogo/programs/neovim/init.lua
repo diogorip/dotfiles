@@ -31,7 +31,7 @@ cmp.setup({
           return entry.completion_item.label:match("^@")
         elseif cursor_before_line:sub(-1) == ":" then
           return entry.completion_item.label:match("^:")
-            and not entry.completion_item.label:match("^:on%-")
+              and not entry.completion_item.label:match("^:on%-")
         else
           return true
         end
@@ -130,7 +130,8 @@ local servers = {
         },
         schemas = {
           ["https://www.schemastore.org/github-workflow.json"] = ".github/workflows/*",
-          ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "docker-compose*.{yml,yaml}",
+          ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] =
+          "docker-compose*.{yml,yaml}",
         },
       },
       redhat = {
@@ -364,12 +365,12 @@ require("mini.comment").setup({
 
 require("mini.surround").setup({
   mappings = {
-    add = "S", -- Add surrounding in Normal and Visual modes
-    delete = "ds", -- Delete surrounding
-    find = "sf", -- Find surrounding (to the right)
+    add = "S",        -- Add surrounding in Normal and Visual modes
+    delete = "ds",    -- Delete surrounding
+    find = "sf",      -- Find surrounding (to the right)
     find_left = "sF", -- Find surrounding (to the left)
     highlight = "sh", -- Highlight surrounding
-    replace = "cs", -- Replace surrounding
+    replace = "cs",   -- Replace surrounding
   },
 })
 
@@ -469,6 +470,6 @@ vim.keymap.set("n", "<leader>?", function()
 end, { desc = "Buffer Local Keymaps (which-key)" })
 
 require("catppuccin").setup({
-  flavour = "frappe",
+  flavour = "mocha",
   transparent_background = true,
 })

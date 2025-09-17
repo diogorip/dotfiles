@@ -31,7 +31,7 @@
       bind n next-window
       bind p previous-window
 
-      set -g @catppuccin_flavor 'frappe'
+      set -g @catppuccin_flavor 'mocha'
       set -g @catppuccin_window_status_style "basic"
       set -g @catppuccin_window_number "#I"
       set -g @catppuccin_window_text " #{pane_current_command}"
