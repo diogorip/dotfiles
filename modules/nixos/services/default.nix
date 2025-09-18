@@ -1,6 +1,6 @@
 {
   imports = [
-    ./docker.nix
+    ./podman.nix
     ./caddy.nix
     ./asf.nix
     ./postgresql.nix

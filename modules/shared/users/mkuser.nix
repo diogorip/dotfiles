@@ -24,7 +24,7 @@ in
         home = "/home/${name}";
         uid = mkDefault 1000;
         isNormalUser = true;
-        extraGroups = [ "wheel" ] ++ (if config.sys.services.docker.enable then [ "docker" ] else [ ]);
+        extraGroups = [ "wheel" ];
       })
     ]
   );
