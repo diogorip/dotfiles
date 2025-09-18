@@ -4,7 +4,6 @@
   imports = [
     ./programs
     ./catppuccin.nix
-    ./yabai.nix
     ./system
   ];
 }

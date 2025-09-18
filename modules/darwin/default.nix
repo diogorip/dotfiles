@@ -11,6 +11,7 @@
     ./network.nix
     ./keyboard.nix
     ./brew.nix
+    ./services
   ];
 
   system.stateVersion = 6;

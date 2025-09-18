@@ -27,12 +27,6 @@
           rev = "0d81408724412838d4d3299396535cafb095ac9e";
           hash = "sha256-auiDJuAW4QYhYrfKJvBBJaF8yBxkZIIRmvp6cgvFV/o=";
         };
-        "koekeishiya/homebrew-formulae" = pkgs.fetchFromGitHub {
-          owner = "koekeishiya";
-          repo = "homebrew-formulae";
-          rev = "f5711b9c70e104bffc79e3525e2ed0dc335bdbba";
-          hash = "sha256-e7NybFVmFDHHy8m+cJPnDugGKzfYkMvh/3c+O7jMM2Y=";
-        };
       };
       mutableTaps = false;
       user = "diogo";
@@ -62,8 +56,6 @@
         "podman"
         "podman-compose"
         "mas"
-        "koekeishiya/formulae/yabai"
-        "koekeishiya/formulae/skhd"
       ];
 
       casks = [

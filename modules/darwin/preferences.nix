@@ -7,6 +7,13 @@
       show-recents = false;
       minimize-to-application = true;
       mru-spaces = false;
+      persistent-apps = [
+        { app = "/Applications/Zen.app"; }
+        { app = "/System/Applications/Mail.app"; }
+        { app = "/nix/store/a8h5d5fr9ajbq6wnxypsdpmsy4mmb571-kitty-0.42.2/Applications/kitty.app"; }
+        { app = "/nix/store/v6kar0dsqx37vbkbjmglacd0lscbbh85-vesktop-1.5.8/Applications/Vesktop.app"; }
+        { app = "/System/Applications/System Settings.app"; }
+      ];
     };
 
     NSGlobalDomain = {
@@ -17,6 +24,7 @@
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
       NSAutomaticCapitalizationEnabled = false;
+      NSScrollAnimationEnabled = true;
     };
 
     WindowManager = {
@@ -33,6 +41,8 @@
       FXEnableExtensionChangeWarning = false;
       AppleShowAllExtensions = true;
       AppleShowAllFiles = true;
+      FXRemoveOldTrashItems = true;
+      ShowHardDrivesOnDesktop = true;
     };
 
     CustomUserPreferences."com.apple.finder" = {
@@ -48,6 +58,15 @@
     loginwindow = {
       GuestEnabled = false;
       SHOWFULLNAME = false;
+    };
+
+    controlcenter = {
+      BatteryShowPercentage = true;
+      Bluetooth = false;
+      Display = false;
+      FocusModes = false;
+      NowPlaying = false;
+      Sound = false;
     };
   };
 

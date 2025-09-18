@@ -1,5 +1,8 @@
 {
-  sys.profiles.graphical.enable = true;
+  sys = {
+    profiles.graphical.enable = true;
+    services.yabai.enable = true;
+  };
 
   system.primaryUser = "diogo";
 
