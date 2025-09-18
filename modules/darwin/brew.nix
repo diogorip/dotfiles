@@ -59,8 +59,8 @@
       };
 
       brews = [
-        "docker"
-        "docker-compose"
+        "podman"
+        "podman-compose"
         "mas"
         "koekeishiya/formulae/yabai"
         "koekeishiya/formulae/skhd"
