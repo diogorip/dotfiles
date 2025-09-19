@@ -20,6 +20,10 @@
       ui_font_size = 16;
       buffer_font_family = "Maple Mono";
       buffer_font_size = 18;
+
+      project_panel = {
+        dock = "right";
+      };
     };
   };
 }

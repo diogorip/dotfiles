@@ -8,7 +8,7 @@
     ../shared
     inputs.home-manager.darwinModules.home-manager
     ./preferences.nix
-    ./network.nix
+    ./networking.nix
     ./keyboard.nix
     ./brew.nix
     ./services
