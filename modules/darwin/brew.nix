@@ -18,14 +18,14 @@
         "homebrew/homebrew-core" = pkgs.fetchFromGitHub {
           owner = "homebrew";
           repo = "homebrew-core";
-          rev = "10bd122b5d16ee57ad03fcbadeeca9d51d158788";
-          hash = "sha256-V4LCTzpHTY8dBUV/ww4dOtOhxoOb7VsbIFN+YMA+gO0=";
+          rev = "2e8d747b4e6ee4a63475024a599dabc4cc75d139";
+          hash = "sha256-+wW1qoXfCi5d9isUiatbpKx6Esg1RzhmtTqV7bFzgBA=";
         };
         "homebrew/homebrew-cask" = pkgs.fetchFromGitHub {
           owner = "homebrew";
           repo = "homebrew-cask";
-          rev = "0d81408724412838d4d3299396535cafb095ac9e";
-          hash = "sha256-auiDJuAW4QYhYrfKJvBBJaF8yBxkZIIRmvp6cgvFV/o=";
+          rev = "ac3bea955fb6aa91c40fa186278989b4ae673ac6";
+          hash = "sha256-fdHjd9Djje69tmduH8pNqHnrQzjILZO+wn8C9iHZZZo=";
         };
       };
       mutableTaps = false;
