@@ -53,8 +53,8 @@
       };
 
       brews = [
-        "podman"
-        "podman-compose"
+        "docker"
+        "docker-compose"
         "mas"
       ];
 

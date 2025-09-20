@@ -8,7 +8,7 @@
     profiles.headless.enable = true;
     services = {
       caddy.enable = true;
-      podman.enable = true;
+      docker.enable = true;
       asf.enable = true;
       postgresql.enable = true;
       website.enable = true;
