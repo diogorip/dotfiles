@@ -5,7 +5,7 @@
   catppuccin = {
     enable = true;
     flavor = "mocha";
-    accent = "pink";
+    accent = "mauve";
     nvim.enable = false;
   };
 }
