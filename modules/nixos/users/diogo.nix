@@ -8,6 +8,6 @@ let
 in
 {
   config = mkIf (elem "diogo" config.sys.users) {
-    users.users.diogo.hashedPassword = "$y$j9T$gr3AsFOgHR3fthkAWtX.g0$WpG6J.l2tTLq5Uzf03PvAtElO0CqakFXMtQT0pwS09/";
+    users.users.diogo.hashedPassword = "$6$h/hPw1aKAbw/WKxy$IEnxYGD/esK890EjR5i4TlrDj6ph4DfZpiUdQ2FZp/LqXAkNzSN2BXUlmL4QQWJHsvjlbzIvULeLigfATRzyC.";
   };
 }
