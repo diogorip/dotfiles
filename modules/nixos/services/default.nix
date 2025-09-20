@@ -6,5 +6,6 @@
     ./postgresql.nix
     ./website.nix
     ./cloudflared.nix
+    ./anubis.nix
   ];
 }
