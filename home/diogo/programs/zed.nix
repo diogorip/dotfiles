@@ -2,13 +2,7 @@
 {
   programs.zed-editor = {
     inherit (config.sys.profiles.graphical) enable;
-    extensions = [
-      "git-firefly"
-      "vue"
-      "dockerfile"
-      "docker-compose"
-      "nix"
-    ];
+
     userSettings = {
       telemetry = {
         diagnostics = false;
@@ -25,5 +19,13 @@
         dock = "right";
       };
     };
+    extensions = [
+      "git-firefly"
+      "vue"
+      "dockerfile"
+      "docker-compose"
+      "nix"
+      "discord-presence"
+    ];
   };
 }

@@ -76,6 +76,7 @@ let
           "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+          "https://addons.mozilla.org/firefox/downloads/latest/refined-github-/latest.xpi"
         ];
       };
       SearchEngines = {
