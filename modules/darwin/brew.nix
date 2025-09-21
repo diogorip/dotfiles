@@ -46,7 +46,6 @@
       taps = builtins.attrNames config.nix-homebrew.taps;
 
       masApps = {
-        "Pages" = 409201541;
         "TestFlight" = 899247664;
         "WhatsApp" = 310633997;
         "WireGuard" = 1451685025;
@@ -55,7 +54,6 @@
       brews = [
         "docker"
         "docker-compose"
-        "mas"
       ];
 
       casks = [
