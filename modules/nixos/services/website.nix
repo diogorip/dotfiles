@@ -17,12 +17,11 @@ in
   };
 
   config = mkIf cfg.enable {
-    sops.secrets.anubis-website = {
-      sopsFile = "${self}/secrets/services/anubis.yaml";
-      key = "website";
-      owner = "anubis";
-      group = "anubis";
-    };
+
+    #   key = "website";
+    #   owner = "anubis";
+    #   group = "anubis";
+    # };
 
     services = {
       anubis = mkIf config.sys.services.anubis.enable {
