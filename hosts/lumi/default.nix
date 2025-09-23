@@ -13,7 +13,6 @@
       postgresql.enable = true;
       website.enable = true;
       cloudflared.enable = true;
-      anubis.enable = true;
     };
     networking.wireguard.enable = true;
   };

@@ -39,6 +39,7 @@ let
           "https://mistral.ai"
           "https://codeberg.org"
           "https://revolut.com"
+          "https://ips.pt"
           "https://luvsick.gg"
           "http://10.100.0.1"
           "http://[fd00:1:1:1::1]"

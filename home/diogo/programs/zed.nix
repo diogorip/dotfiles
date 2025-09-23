@@ -26,6 +26,7 @@
       "docker-compose"
       "nix"
       "discord-presence"
+      "astro"
     ];
   };
 }
