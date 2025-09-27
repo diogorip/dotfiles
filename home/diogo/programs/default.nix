@@ -8,12 +8,12 @@
     ./btop.nix
     ./neovim
     ./tmux.nix
-    ./kitty.nix
     ./firefox.nix
     ./fzf.nix
     ./ripgrep.nix
     ./vesktop.nix
     ./zed.nix
+    ./ghostty.nix
   ];
 
   sys.packages = {
