@@ -16,7 +16,7 @@
       macos-titlebar-style = "tabs";
       window-save-state = "always";
       bell-features = "no-audio";
-      macos-option-as-alt = true;
+      macos-option-as-alt = "left";
     };
   };
 }

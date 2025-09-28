@@ -10,7 +10,7 @@
       persistent-apps = [
         { app = "/Applications/Zen.app"; }
         { app = "/System/Applications/Mail.app"; }
-        { app = "/nix/store/a8h5d5fr9ajbq6wnxypsdpmsy4mmb571-kitty-0.42.2/Applications/kitty.app"; }
+        { app = "/nix/store/2j3fp70magmwbrfzvmqkf3wlb2b4lr2p-ghostty-bin-1.2.0/Applications/Ghostty.app"; }
         { app = "/nix/store/v6kar0dsqx37vbkbjmglacd0lscbbh85-vesktop-1.5.8/Applications/Vesktop.app"; }
         { app = "/System/Applications/System Settings.app"; }
       ];

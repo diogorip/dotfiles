@@ -35,7 +35,7 @@ in
         yabai -m rule --add app="Safari" space=web
 
         yabai -m space 2 --label dev
-        yabai -m rule --add app="kitty" space=dev
+        yabai -m rule --add app="Ghostty" space=dev
         yabai -m rule --add app="Xcode" space=dev
         yabai -m rule --add app="Zed" space=dev
 
@@ -65,6 +65,10 @@ in
         yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
         yabai -m rule --add label="1Password" app="^1Password$" manage=off
         yabai -m rule --add label="FaceTime" app="^FaceTime$" manage=off
+
+        yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+        yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+
       '';
     };
   };
