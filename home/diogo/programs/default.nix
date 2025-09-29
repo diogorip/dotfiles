@@ -2,7 +2,7 @@
 {
   imports = [
     ./git.nix
-    ./hyfetch
+    ./fastfetch
     ./zsh.nix
     ./ohmyposh
     ./btop.nix
