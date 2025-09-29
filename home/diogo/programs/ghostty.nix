@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
   programs.ghostty = {
-    enable = true;
+    inherit (config.sys.profiles.graphical) enable;
     package = pkgs.ghostty-bin;
     enableZshIntegration = config.programs.zsh.enable;
     installBatSyntax = config.programs.bat.enable;
