@@ -13,7 +13,7 @@ in
 {
   options = {
     sys.services.cloudflared = mkServiceOption "cloudflared" {
-      domain = "luvsick.gg";
+      domain = "${config.sys.services.caddy.domain}";
     };
   };
 

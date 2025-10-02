@@ -41,6 +41,7 @@ let
           "https://revolut.com"
           "https://ips.pt"
           "https://luvsick.gg"
+          "https://diogo.rip"
           "http://10.100.0.1"
           "http://[fd00:1:1:1::1]"
         ];

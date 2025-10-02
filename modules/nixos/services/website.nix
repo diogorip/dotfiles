@@ -17,12 +17,6 @@ in
   };
 
   config = mkIf cfg.enable {
-
-    #   key = "website";
-    #   owner = "anubis";
-    #   group = "anubis";
-    # };
-
     services = {
       anubis = mkIf config.sys.services.anubis.enable {
         instances.website.settings = {

@@ -13,7 +13,7 @@ in
 {
   options = {
     sys.services.caddy = mkServiceOption "caddy" {
-      domain = "luvsick.gg";
+      domain = "diogo.rip";
     };
   };
 
@@ -29,7 +29,7 @@ in
 
     security.acme = {
       acceptTerms = true;
-      defaults.email = "hi@luvsick.gg";
+      defaults.email = "hi@diogo.rip";
       certs.${cfg.domain} = {
         extraDomainNames = [ "*.${cfg.domain}" ];
         dnsProvider = "cloudflare";
