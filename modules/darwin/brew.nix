@@ -65,7 +65,6 @@
         "raycast"
         "zen"
         "sketch@beta"
-        "notion"
       ]
       ++ lib.optionals config.sys.profiles.gaming.enable [
         "steam"
