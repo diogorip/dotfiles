@@ -52,7 +52,7 @@ in
         };
       };
 
-      caddy.virtualHosts.${cfg.domain}.extraConfig = ''localhost:${toString cfg.port}'';
+      caddy.virtualHosts.${cfg.domain}.extraConfig = ''reverse_proxy localhost:${toString cfg.port}'';
     };
   };
 }
