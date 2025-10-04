@@ -65,6 +65,7 @@
         "raycast"
         "zen"
         "sketch@beta"
+        "element"
       ]
       ++ lib.optionals config.sys.profiles.gaming.enable [
         "steam"

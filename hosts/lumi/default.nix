@@ -14,6 +14,7 @@
       website.enable = true;
       cloudflared.enable = true;
       n8n.enable = true;
+      matrix.enable = true;
     };
     networking.wireguard.enable = true;
   };

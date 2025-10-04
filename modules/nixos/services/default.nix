@@ -8,5 +8,6 @@
     ./cloudflared.nix
     ./anubis.nix
     ./n8n.nix
+    ./matrix.nix
   ];
 }
