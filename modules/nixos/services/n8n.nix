@@ -19,13 +19,6 @@ in
   };
 
   config = mkIf cfg.enable {
-    sops.secrets.cloudflare-cert = {
-      sopsFile = "${self}/secrets/services/cloudflare.yaml";
-      key = "cert";
-      owner = "caddy";
-      group = "caddy";
-    };
-
     services = {
       n8n = {
         enable = true;
