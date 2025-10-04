@@ -21,9 +21,15 @@ in
   };
 
   config = mkIf cfg.enable {
+    sops.secrets.matrix = {
+      sopsFile = "${self}/secrets/services/matrix.yaml";
+      owner = "matrix-synapse";
+    };
+
     services = {
       matrix-synapse = {
         enable = true;
+        extraConfigFiles = [ config.sops.secrets.matrix.path ];
         settings = {
           server_name = domain;
           public_baseurl = "https://${domain}";
